@@ -73,6 +73,9 @@ main {
   border-radius: 8px 8px 0 0;
   text-align: center;
   color: white;
+}
+
+section h1, .card-2 h2{
   font-size: 1.1rem;
 }
 
