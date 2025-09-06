@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +42,8 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -73,10 +74,8 @@ main {
   border-radius: 8px 8px 0 0;
   text-align: center;
   color: white;
-}
-
-section h1, .card-2 h2{
   font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 .about-content {
@@ -95,6 +94,7 @@ section h1, .card-2 h2{
 
 .text p {
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .portrait img {
@@ -120,7 +120,9 @@ section h1, .card-2 h2{
 
 .flag-section #flag-p {
   margin-top: -14px;
+   min-height: 80px
 }
+
 
 .flag-section .flag img {
   border: 1px solid #333;
@@ -155,4 +157,11 @@ footer {
   color: #fbc02d;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* pile en colonne sur mobile */
+  }
+}
+
  
