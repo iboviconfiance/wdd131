@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   color: white;
   text-align: center;
@@ -62,7 +66,6 @@ main {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Titres des cartes */
 .card-2 h2, .card-1 h1{
   background-color: #123456;
   padding: 10px;
@@ -73,7 +76,6 @@ main {
   font-size: 1.1rem;
 }
 
-/* Mise en page About Me */
 .about-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -84,7 +86,7 @@ main {
   border-radius: 4px;
 }
 
-.text h3 {
+.text h2 {
   text-align: center;
 }
 
@@ -93,7 +95,9 @@ main {
 }
 
 .portrait img {
-  width: 120px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .border {
@@ -118,13 +122,22 @@ main {
 .flag-section .flag img {
   border: 1px solid #333;
   margin-top: 20px;
-  width: 150px;
-  height: 60px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .flag-section .flag p {
   font-size: 0.9rem;
   color: #555;
+}
+
+.card-2 li{
+  margin-bottom: 0.75rem;
+}
+
+.card-2 li a{
+  padding: 0.75rem 1rem;
 }
 
 footer {
