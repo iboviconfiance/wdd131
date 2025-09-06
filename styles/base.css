@@ -94,6 +94,7 @@ main {
 }
 
 .portrait img {
+  aspect-ratio: 1/1;
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -123,6 +124,7 @@ main {
 .flag-section .flag img {
   border: 1px solid #333;
   margin-top: 20px;
+  aspect-ratio: 3/2;
   max-width: 100%;
   height: auto;
   object-fit: cover;
