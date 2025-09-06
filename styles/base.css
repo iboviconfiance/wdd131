@@ -63,7 +63,7 @@ main {
 }
 
 /* Titres des cartes */
-.card-2 h2, .card-1 h1 {
+.card-2 h2, .card-1 h1{
   background-color: #123456;
   padding: 10px;
   margin: -25px -25px 20px -25px;
