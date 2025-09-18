@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
   .menu {
-    display: flex;              /* reste en flex */
+    display: flex;             
     flex-direction: column;
     align-items: center;
-    background-color: #123456;
+    background-color: #3c0076;
     width: 100%;
-    overflow: hidden;           /* cache le surplus */
-    max-height: 0;              /* fermé par défaut */
-    transition: max-height 0.4s ease-out; /* animation */
+    overflow: hidden;          
+    max-height: 0;              
+    transition: max-height 0.4s ease-out; 
   }
 
   .menu a {
     margin: 15px 0;
     font-size: 22px;
-    opacity: 0;                 /* caché au départ */
+    opacity: 0;                 
     transition: opacity 0.3s ease-in;
   }
 
@@ -27,17 +27,17 @@
     top: 15px;
   }
 
-  /* Quand le menu est actif */
+  
   .menu.active {
-    max-height: 500px; /* assez grand pour contenir les liens */
+    max-height: 500px; 
     transition: max-height 0.4s ease-in;
   }
 
   .menu.active a {
-    opacity: 1; /* les liens apparaissent en fondu */
+    opacity: 1; 
   }
 
-  /* Album en 1 colonne */
+  
   main .album {
     grid-template-columns: 1fr;
   }
