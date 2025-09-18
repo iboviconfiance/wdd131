@@ -20,8 +20,7 @@ nav {
 
 .logo {
     cursor: pointer;
-  font-size: 22px;
-  font-weight: bold;
+    font-size: 22px;
 }
 
 .menu a {
@@ -58,13 +57,13 @@ main .album{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
-main .album .imgs figure{
+main .album .imgs figcaption{
     text-align: center;
     margin-top: 5px;
     font-size: 0.9rem;
 }
 
-h1{
+h2{
     margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
