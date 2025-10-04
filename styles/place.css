@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #009739;  
+  --secondary-color: #FFD100; 
+  --accent-color: #DC241F;    
+  --light-color: #fff;
+  --dark-color: #222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: var(--dark-color);
+}
+
+header {
+  color: var(--dark-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+header .green, footer .green1{
+    width: 100%;
+    height: 40px;
+    background: var(--primary-color);
+}
+
+header .yellow,footer .yellow1{
+    width: 100%;
+    height: 40px;
+    margin-top: -22px;
+    background: var(--secondary-color);
+}
+
+header .red, footer .red1{
+    width: 100%;
+    height: 40px;
+    background: var(--accent-color);
+
+}
+
+picture img{
+    width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+.data, .weather {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+footer {
+  color: var(--dark-color);
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
