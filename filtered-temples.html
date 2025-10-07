@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="WDD 131 – Filtered Temples Album | Confiance Hategekimana Ibovi" />
+  <meta name="author" content="Confiance Hategekimana Ibovi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+  <title>Temples Album</title>
+</head>
+<body>
+  <header>
+    <nav class="topnav" aria-label="Main navigation">
+      <h1 class="logo">Temple Album</h1>
+
+      <button class="hamburger" id="hambtn" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+        &#9776;
+      </button>
+
+      <div class="menu" id="main-menu" role="menubar">
+        <a href="#" role="menuitem" data-filter="home" class="active">Home</a>
+        <a href="#" role="menuitem" data-filter="old">Old</a>
+        <a href="#" role="menuitem" data-filter="new">New</a>
+        <a href="#" role="menuitem" data-filter="large">Large</a>
+        <a href="#" role="menuitem" data-filter="small">Small</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="section-title">HOME</h2>
+
+    <!-- container where JS will inject the temple cards -->
+    <section id="temples-container" class="temples-grid" aria-live="polite">
+      <!-- Cards injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> Confiance Ibovi — République du Congo</p>
+    <p id="lastModified" aria-hidden="false"></p>
+  </footer>
+</body>
+</html>
