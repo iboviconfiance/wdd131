@@ -54,21 +54,21 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake/400x250/salt_lake_temple_exterior.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
   },
   {
     templeName: "Bern Switzerland",
     location: "Gümligen, Bern, Switzerland",
     dedicated: "1955, September, 11",
     area: 10346,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/400x250/bern-switzerland-temple.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/400x250/bern-switzerland-temple-lds-653038-wallpaper.jpg"
   },
   {
-    templeName: "Ávila Spain",
-    location: "Ávila, Spain",
-    dedicated: "2002, October, 27",
-    area: 8900,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/avila-spain/400x250/avila-spain-temple.jpg"
+    templeName: "Madrid Spain",
+    location: "Madrid, Spain",
+    dedicated: "1999, March, 21",
+    area: 45800,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/400x250/madrid-spain-temple-954939-wallpaper.jpg"
   }
 ];
 
@@ -176,9 +176,7 @@ function filterTemples(criteria) {
   displayTemples(filtered);
 }
 
-/* -------------------------
-   Menu event handlers
-   ------------------------- */
+
 function onMenuClick(e) {
   if (!e.target.matches('[data-filter]')) return;
   e.preventDefault();
