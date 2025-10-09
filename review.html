@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product review confirmation page showing your submission count for WDD 131.">
+  <meta name="author" content="Confiance Hategekimana Ibovi">
   <title>Review Confirmation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/form.css">
   <script defer>
-    // Count reviews with localStorage
+    
     let count = Number(localStorage.getItem("reviewCount")) || 0;
     count++;
     localStorage.setItem("reviewCount", count);
@@ -21,13 +26,13 @@
   </header>
 
   <main class="confirmation">
-    <p>Your review has been submitted successfully. 🎉</p>
+    <p>Your product review has been submitted successfully. 🎉</p>
     <p>You have submitted <strong id="counter">0</strong> review(s) so far.</p>
     <a href="form.html" class="back-btn">Submit Another Review</a>
   </main>
 
   <footer>
-    <p>©2025 🌸 Confiance Ibovi Hategekimana🌸 Congo Brazzaville</p>
+    <p>©2025 🌸 Confiance Hategekimana Ibovi 🌸 Congo Brazzaville</p>
   </footer>
 </body>
 </html>
