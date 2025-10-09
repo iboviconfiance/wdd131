@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer>
+    // Count reviews with localStorage
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("counter").textContent = count;
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main class="confirmation">
+    <p>Your review has been submitted successfully. 🎉</p>
+    <p>You have submitted <strong id="counter">0</strong> review(s) so far.</p>
+    <a href="form.html" class="back-btn">Submit Another Review</a>
+  </main>
+
+  <footer>
+    <p>©2025 🌸 Confiance Ibovi Hategekimana🌸 Congo Brazzaville</p>
+  </footer>
+</body>
+</html>
